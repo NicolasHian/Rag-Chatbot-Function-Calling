@@ -1,0 +1,16 @@
+# Ambientes virtuais Python
+venv/
+__pycache__/
+*.pyc
+
+# Dependências Node
+node_modules/
+
+# Banco de dados gerado automaticamente (recriado pelo setup.sql)
+empresa.db
+
+# Variáveis de ambiente / segredos (se um dia adicionar)
+.env
+
+# Arquivos de IDE
+.vscode/

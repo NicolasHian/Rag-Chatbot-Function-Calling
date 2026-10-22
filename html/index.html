@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NuvemFlix Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar: historico das conversas -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <span class="logo-dot"></span>
+        <h1>Histórico</h1>
+      </div>
+
+      <button class="new-chat-btn" id="new-chat-btn">+ Nova conversa</button>
+
+      <ul class="history-list" id="history-list">
+      
+        <li class="history-item active">Planos de assinatura</li>
+        <li class="history-item">Férias do Nicolas</li>
+      </ul>
+    </aside>
+
+    <!-- Área principal do chat -->
+    <main class="chat-main">
+
+      <header class="chat-header">
+        <h2>NuvemFlix Assistant</h2>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+          <span class="icon-dark">●</span>
+          <span class="icon-light">○</span>
+        </button>
+      </header>
+
+      <div class="chat-messages" id="chat-messages">
+
+        <!-- Mensagens de exemplo, só pra visualização.
+             Remova ou gere dinamicamente a partir do backend. -->
+        <div class="message assistant">
+          <div class="bubble">
+            Olá! Pergunte algo sobre o manual da NuvemFlix, ou sobre férias de um funcionário.
+          </div>
+        </div>
+
+        <div class="message user">
+          <div class="bubble">
+            Quais são os planos de assinatura?
+          </div>
+        </div>
+
+        <div class="message assistant">
+          <div class="bubble">
+            Básico: HD (720p), 1 tela. Padrão: Full HD, 2 telas. Premium: 4K, 4 telas.
+          </div>
+        </div>
+
+      </div>
+
+      <form class="chat-input-area" id="chat-form">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Digite sua pergunta..."
+          autocomplete="off"
+        />
+        <button type="submit" id="send-btn" aria-label="Enviar">Enviar</button>
+      </form>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
